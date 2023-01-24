@@ -42,7 +42,7 @@ Cześć! Jestem Zuza i zdecydowałąm się wziąć udziałw wyzwaniu aby rozpocz
 
 # Task 2
 
-[Link do dysky Google](https://drive.google.com/drive/folders/1m5DYhsqjTcRLIZXE9gPDTh7DB3eXJjcT?usp=share_link)
+[Link do dysku Google](https://drive.google.com/drive/folders/1m5DYhsqjTcRLIZXE9gPDTh7DB3eXJjcT?usp=share_link)
 
 ## Subtask 3 
 Po co piszemy test case'y?
