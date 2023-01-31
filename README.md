@@ -47,3 +47,9 @@ Cześć! Jestem Zuza i zdecydowałąm się wziąć udziałw wyzwaniu aby rozpocz
 ## Subtask 3 
 Po co piszemy test case'y?
 Przypadki testowe piszemy, aby udokumentować różne możliwości obsługi aplikacji. Można je wykorzystać w kontekście testów akceptacyjnych oceniając czy aplikacja spełnia wymagania. Są też dobrym źródłem informacji o aplikacji dl aosób wdrażających się w jej testowanie.
+
+# Task 3
+
+## Subtask 1, 2, 3
+
+[Link do dysku Google](https://drive.google.com/drive/folders/1Un6t04ALf7bs39GwqEMM_z1gGPhHQINE?usp=sharing)
