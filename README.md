@@ -53,3 +53,27 @@ Przypadki testowe piszemy, aby udokumentować różne możliwości obsługi apli
 ## Subtask 1, 2, 3
 
 [Link do dysku Google](https://drive.google.com/drive/folders/1Un6t04ALf7bs39GwqEMM_z1gGPhHQINE?usp=sharing)
+
+# Task 4
+
+## Subtask 1, 2 
+[Link do dysku Google](https://docs.google.com/document/d/1720lPG4xdjJ9dxdsneL5RQAbqlXD1hmMKAQ6MGfjKdU/edit?usp=share_link)
+
+## Subtask 3
+ * Do czego służy ta aplikacja? 
+ do kupowania oraz sprzedawania rzeczy, są na niej publikowane ogłoszenia dotyczące najmu np nieruchomości, wynajmu okresowego rzeczy oraz pracy.
+ 
+ * Jaki jest cel tej aplikacji?
+ aplikacja ma na celu gromadzenie ogłoszeń kupna/sprzedaży
+ 
+ * Kto ma być użytkownikiem końcowym aplikacji?
+ kupujący lub poszukujący usług
+ 
+ * Czy według Ciebie aplikacja jest user friendly? 
+ tak
+ 
+ * Jak byś usprawnił aplikację? Co byś w niej poprawił. Czy masz jakiś pomysł na dodatkową funkcjonalność? 
+ głównym minusem, jest przekierowanie procesu rejestracji/logowania do przeglądarki 
+ 
+ * Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?
+ moim zdaniem testowanie aplikacji natywnej jest dużo szybsze
