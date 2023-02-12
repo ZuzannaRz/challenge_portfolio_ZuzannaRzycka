@@ -77,3 +77,7 @@ Przypadki testowe piszemy, aby udokumentować różne możliwości obsługi apli
  
  * Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?
  moim zdaniem testowanie aplikacji natywnej jest dużo szybsze
+ 
+ # Task 5
+ ## Subtask 1
+  * SELECT * FROM
