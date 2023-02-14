@@ -152,5 +152,6 @@ Przypadki testowe piszemy, aby udokumentować różne możliwości obsługi apli
   * Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id.
   
   SELECT * FROM `movies` WHERE `price` > 9 AND `movie_id` BETWEEN 2 and 8;
+  
   ![10](https://user-images.githubusercontent.com/122168130/218873351-a035227e-bd81-42d8-b3f2-f469fefcac48.png)
 
