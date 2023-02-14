@@ -110,42 +110,49 @@ Przypadki testowe piszemy, aby udokumentować różne możliwości obsługi apli
   * Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem.
   
   SELECT * FROM `movies` WHERE year_of_production between 1900 and 1999;
+  
   ![3](https://user-images.githubusercontent.com/122168130/218873070-ab4abe37-ba6b-4c15-aaec-d115dc2cee34.png)
 
 
   * Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$
   
   SELECT `title`,`price` FROM `movies` WHERE `price` <7;
+  
   ![4](https://user-images.githubusercontent.com/122168130/218873124-8bd88cb1-9993-49d5-b8e3-253484c26744.png)
 
 
   * Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN.
   
   SELECT * FROM `actors` WHERE `actor_id` <10 AND (`actor_id`=4 OR `actor_id`=5 OR `actor_id`=6 OR `actor_id`=7);
+  
   ![5](https://user-images.githubusercontent.com/122168130/218873176-e02c8822-ce2c-4f7a-9c51-ec36d7bc6fa0.png)
 
 
   * Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny.
   
   SELECT * FROM `customers` WHERE `customer_id` = 2 OR `customer_id` = 4 OR `customer_id` = 6;
+  
   ![6](https://user-images.githubusercontent.com/122168130/218873208-f280dba1-4313-46af-905e-7086d7b7fb84.png)
 
   
   * Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN.
   
   SELECT * FROM `customers` WHERE `customer_id` IN (1, 3, 5)
+  
   ![7](https://user-images.githubusercontent.com/122168130/218873249-d48cd9e9-1d48-4ecf-876b-c17a0452a747.png)
 
   
   * Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”.
   
   SELECT * FROM `actors` WHERE `name` LIKE 'An%';
+  
   ![8](https://user-images.githubusercontent.com/122168130/218873275-ac68459b-eca5-4e64-95a0-9a65f48afdbd.png)
 
   
   * Wyświetl dane klienta, który nie ma podanego adresu email.
   
   SELECT * FROM `customers` WHERE `email` IS null;
+  
   ![9](https://user-images.githubusercontent.com/122168130/218873319-842b49b5-45b2-4575-87b0-5a6c2bf440d3.png)
 
   
