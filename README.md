@@ -97,7 +97,7 @@ Przypadki testowe piszemy, aby udokumentować różne możliwości obsługi apli
   
   SELECT * FROM `actors` ORDER BY `actors`.`surname` ASC
    
-    ![1](https://user-images.githubusercontent.com/122168130/218872509-2877d60b-c78d-49a1-ab37-ba308c28c267.png)
+   ![1](https://user-images.githubusercontent.com/122168130/218872509-2877d60b-c78d-49a1-ab37-ba308c28c267.png)
 
   
   * Wyświetl film, który powstał w 2019 roku.
