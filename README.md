@@ -161,4 +161,90 @@ Przypadki testowe piszemy, aby udokumentować różne możliwości obsługi apli
   SELECT * FROM `movies` WHERE `price` > 9 AND `movie_id` BETWEEN 2 and 8;
   
   ![10](https://user-images.githubusercontent.com/122168130/218873351-a035227e-bd81-42d8-b3f2-f469fefcac48.png)
+  
+  # Task 6
+  ## Subtask 1
+  
+  * 11. Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd
+  
+  UPDATE `customers` SET `surname`= 'Miler' WHERE `name`='Ania'
+  
+  * 12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila.
+  SELECT *
+FROM customers
+JOIN sale
+ON customers.customer_id =sale.customer_id
+WHERE movie_id = 4
+
+SELECT name, email
+FROM customers
+JOIN sale
+ON customers.customer_id =sale.customer_id
+WHERE movie_id = 4
+
+  
+  
+  * 13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com
+  
+  UPDATE `customers` SET `email`= 'pati@mail.com' WHERE `name`='Patrycja'
+  
+  * 14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia).
+  
+  SELECT movies.title, customers.name, customers.surname FROM sale INNER JOIN movies ON sale.movie_id = movies.movie_id INNER JOIN customers ON sale.customer_id = customers.customer_id;
+  
+  
+  * 15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska. Np. Natalie Pilling → Nag
+  
+  step 1.
+ALTER TABLE customers
+ADD pseudonym int
+
+step 2.
+UPDATE `customers` 
+SET `pseudonym`= 'Ols' WHERE customer_id = 1
+UPDATE `customers` 
+SET `pseudonym`= 'Kal' WHERE customer_id = 2
+UPDATE `customers` 
+SET `pseudonym`= 'Anr' WHERE customer_id = 3
+UPDATE `customers` 
+SET `pseudonym`= 'Par' WHERE customer_id = 4
+UPDATE `customers` 
+SET `pseudonym`= 'Mao' WHERE customer_id = 5
+UPDATE `customers` 
+SET `pseudonym`= 'Nag' WHERE customer_id = 6
+
+
+
+  
+  * 16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały.
+  
+  SELECT DISTINCT title
+FROM movies
+JOIN sale
+ON movies.movie_id = sale.movie_id
+  
+  * 17. Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)
+  
+  SELECT name
+FROM actors 
+UNION
+SELECT name
+FROM customers
+ORDER BY name
+  
+  * 18. Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).
+  
+  UPDATE movies SET price = price+2.5 WHERE year_of_production > 2000;
+  
+  * 19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał
+  
+  SELECT actors.name, actors.surname, actors.actor_id, movies.title
+FROM cast
+JOIN actors ON cast.actor_id = actors.actor_id
+JOIN movies ON cast.movie_id = movies.movie_id
+HAVING actor_id = 4
+  
+  * 20. A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa
+  
+  INSERT INTO customers (customer_id, email, name, pseudonym, surname) VALUES ('7', 'honia@mail.com', 'Honia', 'Hoa', 'Stuczka-Kucharska')
 
